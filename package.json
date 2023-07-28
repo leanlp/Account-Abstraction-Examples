@@ -1,0 +1,16 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.16.1"
+  },
+  "dependencies": {
+    "@alchemy/aa-alchemy": "^0.1.0-alpha.17",
+    "@alchemy/aa-core": "^0.1.0-alpha.17",
+    "@alchemy/aa-ethers": "^0.1.0-alpha.17",
+    "@openzeppelin/contracts": "^4.9.2",
+    "dotenv": "^16.0.3",
+    "ethers": "^6.6.4",
+    "viem": "^1.4.1"
+  }
+}
