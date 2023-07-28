@@ -5,13 +5,15 @@ const abi = require('./ABIERC20.json');
 const abiUniV2 = require('./ABIUniSwapRouterV2.json');
 
 
-const iface = new ethers.Interface(abi);
+const iface = new ethers.Interface(abiUniV2);
 
 
-const arg1 = "0x3a085Fa64b3d4DF98e3BF4a869Ea0d6E3082d8c3"; // first argument
+const arg1 = 1; // first argument
 const arg2 = 1; // second argument
+const path = ['0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889','0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa']
+const walletaddress = "0x6f6eb030334642D3D1527B3D1b05fb08C16852d5"
 
-const encodedABI = iface.encodeFunctionData("transfer", [arg1, arg2]);
+const encodedABI = iface.encodeFunctionData("swapExactTokensForTokens", [arg1, arg2, path, walletaddress, 50000 ]);
 
 console.log(encodedABI);
 

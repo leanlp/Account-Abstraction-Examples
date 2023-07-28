@@ -1,4 +1,4 @@
-require("dotenv").config({ path: '../.env' });
+require("dotenv").config();
 const aaCore = require("@alchemy/aa-core");
 const ethers = require("ethers");
 
@@ -46,8 +46,8 @@ const toHex = require("viem").toHex;
   // 3. send a UserOperation
   async function send(){
   const { hash } = await provider.sendUserOperation({
-    target: "0x0723c66f9526D88902513db069d1DD187521AA37",
-    data: "0xa9059cbb0000000000000000000000003a085fa64b3d4df98e3bf4a869ea0d6e3082d8c30000000000000000000000000000000000000000000000000000000000000001",
+    target: "0x5eA59ee2Ec4588Cf515bE33F44239eb443F62cF7",
+    data: "0x1adc7383",
     value: 0, // value: bigint or undefined
   });
 }
