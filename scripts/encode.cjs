@@ -8,10 +8,10 @@ const abiUniV2 = require('./ABIUniSwapRouterV2.json');
 const iface = new ethers.Interface(abi);
 
 
-const arg1 = "0x3a085Fa64b3d4DF98e3BF4a869Ea0d6E3082d8c3"; // first argument
-const arg2 = 1; // second argument
+const arg1 = "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff"; // first argument
+const arg2 = "100000000000000000000"; // second argument
 
-const encodedABI = iface.encodeFunctionData("transfer", [arg1, arg2]);
+const encodedABI = iface.encodeFunctionData("approve", [arg1, arg2]);
 
 console.log(encodedABI);
 
