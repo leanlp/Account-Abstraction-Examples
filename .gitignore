@@ -2,5 +2,6 @@ node_modules
 hardhat-config.ts
 .env
 typechain-types
+artifacts
 
 cache
