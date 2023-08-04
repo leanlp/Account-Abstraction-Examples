@@ -5,7 +5,7 @@ import "@nomicfoundation/hardhat-toolbox";
 
 const {PRIVATE_KEY, API_URL_ALCHEMY, poligonScan} = process.env;
 const config: HardhatUserConfig = {
-  solidity: "0.8.17",
+  solidity: "0.8.19",
   networks: {
     matic: {
       url: API_URL_ALCHEMY,

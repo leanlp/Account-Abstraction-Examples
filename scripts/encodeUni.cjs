@@ -11,11 +11,31 @@ const deadline = Math.floor(Date.now() / 1000) + 60 * 20;
 const arg1 = 1000000000000000n; // WMATIC
 const arg2 = 1; // WETH
 const path = ['0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889','0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa'] 
-const walletaddress = "0xf86d8f08602d1f9D1A5d9663616E21B3B4a1dAB5"
+const walletaddress = "0xc73F8283Fc65232834e445703300d760bd231a76"  //wallet2
 
 const encodedABI = iface.encodeFunctionData("swapExactTokensForTokens", [arg1, arg2, path, walletaddress, deadline ]);
 
 console.log(encodedABI);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

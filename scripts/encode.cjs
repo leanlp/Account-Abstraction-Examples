@@ -8,12 +8,18 @@ const abiUniV2 = require('./ABIUniSwapRouterV2.json');
 const iface = new ethers.Interface(abi);
 
 
-const arg1 = "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff"; // first argument
+const arg1 = "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff";  // Target 1 Wmatic contract // 2do UniswapV2
 const arg2 = "100000000000000000000"; // second argument
 
 const encodedABI = iface.encodeFunctionData("approve", [arg1, arg2]);
 
 console.log(encodedABI);
+
+
+
+
+//WMATIC address= 0x9c3C9283D3e44854697Cd22D3Faa240Cfb032889
+//UniswapV2= 0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff
 
 
 
