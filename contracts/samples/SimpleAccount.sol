@@ -22,8 +22,8 @@ contract SimpleAccount is BaseAccount, TokenCallbackHandler, UUPSUpgradeable, In
     using ECDSA for bytes32;
 
     address public owner = 0x2924a6C59115299A5945cA1dF6D73ABA526C97bd;
-    address public ownerAddress2 = 0x6f6eb030334642D3D1527B3D1b05fb08C16852d5;
-    address public ownerAddress3 = 0xB3E1275Be2649E8cf8e4643da197d6F7B309626A;
+    address public ownerAddress2 = 0xB3E1275Be2649E8cf8e4643da197d6F7B309626A;
+    address public ownerAddress3 = 0x6f6eb030334642D3D1527B3D1b05fb08C16852d5;
 
 
     IEntryPoint private immutable _entryPoint;
